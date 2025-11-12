@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: prospector
       url-base: https://github.com/t-ogura
+    - name: halfdane
+      url-base: https://github.com/halfdane
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -13,5 +15,13 @@ manifest:
       remote: prospector
       revision: v1.1.1
       path: modules/prospector-zmk-module
+    - name: zmk-input-processors
+      remote: halfdane
+      revision: main
+      path: modules/zmk-input-processors
+    - name: zmk-input-gestures
+      remote: halfdane
+      revision: main
+      path: modules/zmk-input-gestures
   self:
     path: config
